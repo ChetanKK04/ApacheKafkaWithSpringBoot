@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/SpringBootKafkaDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaConsumer/SpringBootKafkaConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaProducer/SpringBootKafkaProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaCustomObject/SpringBootKafkaCustomObject/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaCustomObject/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootChainedProcessing/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaMultipleConsumers/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootKafkaErrorHandling-Retry/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="openjdk-24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

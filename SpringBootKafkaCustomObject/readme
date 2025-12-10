@@ -1,0 +1,12 @@
+Use Custom Object (JSON)
+Scenarios:
+
+E-commerce Orders — OrderId, CustomerId, Items, Amount, Status, Timestamp
+User Events — UserId, Event type, Timestamp, IP, Device info, Location
+Payment Transactions — TransactionId, Amount, Currency, Status, Metadata
+Real-time Analytics — UserId, SessionId, PageViewed, TimeSpent, DeviceType
+IoT Sensor Data — SensorId, Temperature, Humidity, Pressure, Location, Timestamp
+Microservices Communication — Service-to-service structured data exchange
+
+
+

@@ -1,0 +1,8 @@
+Use Simple String Message
+Scenarios:
+
+Notifications/Alerts — "System down", "High CPU usage", "Payment failed"
+Logs/Events — Simple audit trails, user actions
+Commands — "START_PROCESS", "STOP_SERVICE", "DELETE_USER_123"
+Real-time Metrics — "CPU: 85%", "Memory: 2GB", "Response time: 250ms"
+Chat/Messaging — Direct text messages between users
