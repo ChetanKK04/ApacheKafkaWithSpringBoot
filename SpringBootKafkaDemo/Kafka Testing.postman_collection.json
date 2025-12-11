@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "07425aaa-db19-40cd-b4c2-1b147920adde",
+		"name": "Kafka Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3843450"
+	},
+	"item": [
+		{
+			"name": "Kafka String in same Application",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/api/producer?message=ab Santi se chal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"producer"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "ab Santi se chal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka String 2 API's post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/send/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"send",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka String 2 API's by Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/send/get?message=kkkajhdh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"send",
+						"get"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "kkkajhdh"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka Custom Object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Pune\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/api/producer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"api",
+						"producer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka String 1 Producer to Multiple Consumers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kafka/getcall?message=me hi hu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kafka",
+						"getcall"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "me hi hu"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka String 1 Producer to Multiple Consumers Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kafka/postcall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kafka",
+						"postcall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka Chained Processing",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ChainedProcessing/chainStart?msg=me yaha hu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ChainedProcessing",
+						"chainStart"
+					],
+					"query": [
+						{
+							"key": "msg",
+							"value": "me yaha hu"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka Consumer msg handle",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ConsumerError?msg=error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ConsumerError"
+					],
+					"query": [
+						{
+							"key": "msg",
+							"value": "error"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kafka Producer msg handle",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":123,\r\n    \"name\":\"Chetan\",\r\n    \"city\":\"Kumar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/ProducerError?msg=jbjbsjkk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ProducerError"
+					],
+					"query": [
+						{
+							"key": "msg",
+							"value": "jbjbsjkk"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
